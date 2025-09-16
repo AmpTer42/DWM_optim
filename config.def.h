@@ -64,7 +64,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL};
-static const char *scrotcmd[] = { "scrot" "-F" "~/Pictures/Screenshot-$('%Y-%m-%d-%H%M%S').png"};
+static const char *scrotcmd[] = { "scrot", "-F", "~/Pictures/Screenshot-$('%Y-%m-%d-%H%M%S').png"};
 
 static const Key keys[] = {
 	/* modifier          key                       function        argument */
