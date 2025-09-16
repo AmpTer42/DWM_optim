@@ -8,6 +8,7 @@ Requirements
 ------------
 In order to build dwm you need the Xlib header files.
 For compiling I use TCC (tcc package) but you can edit compiler in MAKEFILE.
+Other standard utilities: dmenu, rofi, st, flameshot
 
 
 Installation
@@ -48,3 +49,8 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+Goal
+-------------
+The long-term goal is to make it smaller than 2000 lines
