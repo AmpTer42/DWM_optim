@@ -1,14 +1,13 @@
 # DWM_optim
 This is a DWM's fork with less features. It's optimised for me but not for all. See the https://suckless.org/dwm/ for original
 
-dwm - dynamic window manager
-============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
 
 Requirements
 ------------
 In order to build dwm you need the Xlib header files.
+For compiling I use TCC (tcc package) but you can edit compiler in MAKEFILE.
 
 
 Installation
