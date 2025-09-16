@@ -77,8 +77,8 @@ static const Key keys[] = {
 	{ MODKEY,            XK_space,                 setlayout,      {0} },
 	{ MODKEY|ShiftMask,  XK_space,                 togglefloating, {0} },
 	{ 0,                 XK_Print,                 spawn,          {.v = flameshotcmd} },
-	{ 0,                 XF86XK_AudioLowerVolume,  spawn,          SHCMD("pactl set-sink-volume 0 -3%") },
-	{ 0,                 XF86XK_AudioRaiseVolume,  spawn,          SHCMD("pactl set-sink-volume 0 +3%") },
+	{ 0,                 XF86XK_AudioLowerVolume,  spawn,          SHCMD("pactl set-sink-volume 0 -1%") },
+	{ 0,                 XF86XK_AudioRaiseVolume,  spawn,          SHCMD("pactl set-sink-volume 0 +1%") },
 	TAGKEYS(             XK_1,                     0)
 	TAGKEYS(             XK_2,                     1)
 	TAGKEYS(             XK_3,                     2)
