@@ -64,6 +64,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL};
+static const char *grimccmd[] = { "grim", "|", "wl-copy"};
+static const char *grimdcmd[] = { "grim", "~/Pictures/Screenshot-$(date + '%Y-%m-%d-%H%M%Si').png"};
 
 static const Key keys[] = {
 	/* modifier          key                       function        argument */
@@ -76,7 +78,8 @@ static const Key keys[] = {
 	{ MODKEY,            XK_c,                     killclient,     {0} },
 	{ MODKEY,            XK_space,                 setlayout,      {0} },
 	{ MODKEY|ShiftMask,  XK_space,                 togglefloating, {0} },
-	{ 0,                 XK_Print,                 spawn,          {.v = flameshotcmd} },
+	{ 0,                 XK_Print,                 spawn,          {.v = grimccmd} },
+	{ 0|ShiftMask,       XK_Print,                 spawn,          {.v = grimdcmd} },
 	{ 0,                 XF86XK_AudioLowerVolume,  spawn,          SHCMD("pactl set-sink-volume 0 -1%") },
 	{ 0,                 XF86XK_AudioRaiseVolume,  spawn,          SHCMD("pactl set-sink-volume 0 +1%") },
 	TAGKEYS(             XK_1,                     0)
